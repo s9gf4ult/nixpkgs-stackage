@@ -16998,6 +16998,7 @@ self: {
        librarySystemDepends = [ openssl ];
        testHaskellDepends = [ base process ];
        testToolDepends = [ git ];
+       hardeningDisable = [ "format" ];
        description = "Low-level bindings to libgit2";
        license = stdenv.lib.licenses.mit;
      }) {inherit (pkgs) git; inherit (pkgs) openssl;};
