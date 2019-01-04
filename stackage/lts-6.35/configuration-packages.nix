@@ -37,6 +37,6 @@ with haskellLib; self: super: {
   "HTTP" = dontCheck super.HTTP;
   # break cycle: statistics monad-par mwc-random vector-algorithms
   "mwc-random" = dontCheck super.mwc-random;
-  # conflicting library versions
-  "Cabal" = dontCheck super.Cabal ;
+  # conflicting versions of "directory" package
+  "hspec-core" = dontCheck super.hspec-core ;
 }
